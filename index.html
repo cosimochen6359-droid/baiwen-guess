@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="timer-card" aria-live="polite">
+      <span>倒计时</span>
+      <strong id="timerValue">200</strong>
+    </div>
+
     <main class="app-shell">
       <section class="game-panel">
         <header class="hero">
@@ -14,10 +19,6 @@
             <p class="eyebrow">AI Yes or No Quiz</p>
             <h1>百问猜猜看</h1>
             <p class="intro-copy">随机隐藏一个答案。你可以不断提“是否”问题，AI 只回答“是”或“否”；50s 时会出现一条线索。</p>
-          </div>
-          <div class="timer-card" aria-live="polite">
-            <span>倒计时</span>
-            <strong id="timerValue">200</strong>
           </div>
         </header>
 
