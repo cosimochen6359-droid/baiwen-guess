@@ -12,6 +12,17 @@
       <strong id="timerValue">200</strong>
     </div>
 
+    <div class="celebration hidden" id="celebration" role="dialog" aria-modal="true" aria-live="assertive">
+      <div class="confetti" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="celebration-card">
+        <p>回答正确！！！</p>
+        <strong id="celebrationText">就是答案</strong>
+        <button class="primary-button" type="button" id="celebrationButton">再来一题</button>
+      </div>
+    </div>
+
     <main class="app-shell">
       <section class="game-panel">
         <header class="hero">
@@ -22,14 +33,7 @@
           </div>
         </header>
 
-        <section class="play-view" aria-labelledby="playTitle">
-          <div class="play-top">
-            <div>
-              <h2 id="playTitle">开始提问</h2>
-            </div>
-            <div class="status-pill" id="statusPill">准备中</div>
-          </div>
-
+        <section class="play-view">
           <div class="hint-card" id="hintCard">
             <div class="hint-icon" aria-hidden="true">?</div>
             <div>
@@ -39,7 +43,7 @@
           </div>
 
           <form class="ask-form" id="askForm">
-            <label for="questionInput">提问</label>
+            <label class="field-label ask-label" for="questionInput">提问</label>
             <div class="input-row">
               <input id="questionInput" autocomplete="off" placeholder="例如：是真实存在的吗？和中国有关吗？是现代的吗？" type="text" />
               <button class="primary-button" type="submit">提问</button>
@@ -49,7 +53,7 @@
           <div class="result-box" id="resultBox" aria-live="polite">正在随机生成题目。</div>
 
           <form class="guess-form" id="guessForm">
-            <label for="guessInput">猜答案</label>
+            <label class="field-label guess-label" for="guessInput">猜答案</label>
             <div class="input-row">
               <input id="guessInput" autocomplete="off" placeholder="想好了就输入答案" type="text" />
               <button class="accent-button" type="submit">提交答案</button>

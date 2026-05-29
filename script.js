@@ -14,7 +14,6 @@ const API_BASE = location.protocol === "file:" ? "http://127.0.0.1:5173" : "";
 const elements = {
   timerValue: document.querySelector("#timerValue"),
   hintText: document.querySelector("#hintText"),
-  statusPill: document.querySelector("#statusPill"),
   askForm: document.querySelector("#askForm"),
   guessForm: document.querySelector("#guessForm"),
   questionInput: document.querySelector("#questionInput"),
@@ -22,7 +21,10 @@ const elements = {
   resultBox: document.querySelector("#resultBox"),
   newGameButton: document.querySelector("#newGameButton"),
   revealButton: document.querySelector("#revealButton"),
-  historyList: document.querySelector("#historyList")
+  historyList: document.querySelector("#historyList"),
+  celebration: document.querySelector("#celebration"),
+  celebrationText: document.querySelector("#celebrationText"),
+  celebrationButton: document.querySelector("#celebrationButton")
 };
 
 setupFloatingTimer();
@@ -48,12 +50,14 @@ async function startNewGame() {
 
     elements.hintText.textContent = "倒计时到50s出线索";
     document.querySelector("#hintCard")?.classList.remove("revealed");
-    elements.statusPill.textContent = "进行中";
-    elements.statusPill.className = "status-pill";
     elements.resultBox.textContent = "题目已随机生成。请从第一个“是否”问题开始。";
     elements.resultBox.className = "result-box";
     elements.questionInput.value = "";
     elements.guessInput.value = "";
+    const askButton = elements.askForm.querySelector("button");
+    askButton.textContent = "提问";
+    askButton.classList.remove("ended");
+    hideCelebration();
     setInputsDisabled(false);
     renderHistory();
     updateTimer();
@@ -135,7 +139,8 @@ async function submitGuess(guessText) {
     });
 
     if (data.correct) {
-      endGame(true, `回答正确，答案是：${data.answer}`);
+      endGame(true, "", { keepResult: true });
+      showCelebration(data.answer);
     } else {
       recordAnswer(`猜答案：${guess}`, "否");
       elements.resultBox.textContent = "否";
@@ -192,14 +197,17 @@ function recordAnswer(question, answer) {
   renderHistory();
 }
 
-function endGame(didWin, message) {
+function endGame(didWin, message, options = {}) {
   state.playing = false;
   stopTimer();
-  elements.statusPill.textContent = didWin ? "已猜中" : "已结束";
-  elements.statusPill.className = `status-pill ${didWin ? "win" : "lose"}`;
-  elements.resultBox.textContent = message;
-  elements.resultBox.className = didWin ? "result-box yes" : "result-box warn";
+  if (!options.keepResult) {
+    elements.resultBox.textContent = message;
+    elements.resultBox.className = didWin ? "result-box yes" : "result-box warn";
+  }
   setInputsDisabled(true);
+  const askButton = elements.askForm.querySelector("button");
+  askButton.textContent = didWin ? "已猜中" : "已结束";
+  askButton.classList.add("ended");
 }
 
 async function postJson(url, payload) {
@@ -273,8 +281,21 @@ elements.guessForm.addEventListener("submit", (event) => {
 
 elements.newGameButton.addEventListener("click", startNewGame);
 elements.revealButton.addEventListener("click", () => revealAnswer("已揭晓"));
+elements.celebrationButton.addEventListener("click", startNewGame);
 
 startNewGame();
+
+function showCelebration(answer) {
+  elements.celebrationText.textContent = `就是${answer}`;
+  elements.celebration.classList.remove("hidden");
+  elements.celebration.classList.remove("celebration-pop");
+  window.requestAnimationFrame(() => elements.celebration.classList.add("celebration-pop"));
+}
+
+function hideCelebration() {
+  elements.celebration.classList.add("hidden");
+  elements.celebration.classList.remove("celebration-pop");
+}
 
 function setupFloatingTimer() {
   const update = () => {
