@@ -106,13 +106,14 @@ h2 {
 .timer-card {
   position: fixed;
   z-index: 20;
-  top: max(14px, env(safe-area-inset-top));
-  right: max(14px, env(safe-area-inset-right));
-  min-width: 118px;
-  padding: 12px 14px;
-  display: grid;
-  gap: 2px;
-  text-align: center;
+  top: var(--timer-top, max(14px, env(safe-area-inset-top)));
+  right: var(--timer-right, max(14px, env(safe-area-inset-right)));
+  min-width: 0;
+  padding: 9px 12px;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  text-align: left;
   box-shadow: 0 12px 30px rgba(31, 95, 191, 0.16);
   backdrop-filter: blur(12px);
 }
@@ -124,7 +125,8 @@ h2 {
 
 .timer-card strong {
   color: var(--primary);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+  line-height: 1;
 }
 
 .timer-card.danger strong {
@@ -132,14 +134,14 @@ h2 {
 }
 
 .play-view {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .intro-copy {
   max-width: 620px;
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.58;
 }
 
 .status-pill {
@@ -160,16 +162,16 @@ h2 {
 }
 
 .hint-card {
-  margin-top: 22px;
-  padding: 18px;
+  margin-top: 16px;
+  padding: 13px;
   border: 1px solid rgba(31, 95, 191, 0.18);
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(31, 95, 191, 0.1), rgba(15, 143, 125, 0.08)),
     #ffffff;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 11px;
   align-items: start;
   box-shadow: 0 14px 34px rgba(31, 95, 191, 0.08);
 }
@@ -186,15 +188,15 @@ h2 {
 }
 
 .hint-icon {
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
   display: grid;
   place-items: center;
   color: #ffffff;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   font-weight: 900;
-  font-size: 1.35rem;
+  font-size: 1rem;
 }
 
 .hint-card span {
@@ -205,9 +207,9 @@ h2 {
 
 .hint-card strong {
   display: block;
-  margin-top: 5px;
-  font-size: clamp(1.08rem, 1.7vw, 1.45rem);
-  line-height: 1.45;
+  margin-top: 3px;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 @keyframes hint-pop {
@@ -414,8 +416,8 @@ input:disabled {
   }
 
   .timer-card {
-    min-width: 92px;
     padding: 8px 10px;
+    gap: 6px;
   }
 
   .timer-card span {
@@ -423,7 +425,7 @@ input:disabled {
   }
 
   .timer-card strong {
-    font-size: 1.28rem;
+    font-size: 1.18rem;
   }
 
   .input-row {

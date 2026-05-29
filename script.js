@@ -25,6 +25,8 @@ const elements = {
   historyList: document.querySelector("#historyList")
 };
 
+setupFloatingTimer();
+
 async function startNewGame() {
   setBusy(true, "正在随机出题...");
 
@@ -273,3 +275,22 @@ elements.newGameButton.addEventListener("click", startNewGame);
 elements.revealButton.addEventListener("click", () => revealAnswer("已揭晓"));
 
 startNewGame();
+
+function setupFloatingTimer() {
+  const update = () => {
+    const viewport = window.visualViewport;
+    const top = viewport ? viewport.offsetTop + 14 : 14;
+    const right = viewport ? Math.max(window.innerWidth - viewport.width - viewport.offsetLeft + 14, 14) : 14;
+    document.documentElement.style.setProperty("--timer-top", `${Math.round(top)}px`);
+    document.documentElement.style.setProperty("--timer-right", `${Math.round(right)}px`);
+  };
+
+  update();
+  window.addEventListener("resize", update, { passive: true });
+  window.addEventListener("scroll", update, { passive: true });
+
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", update, { passive: true });
+    window.visualViewport.addEventListener("scroll", update, { passive: true });
+  }
+}
