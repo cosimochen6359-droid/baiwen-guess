@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>百问猜猜看</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-panel">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">AI Yes or No Quiz</p>
+            <h1>百问猜猜看</h1>
+          </div>
+          <div class="timer-card" aria-live="polite">
+            <span>倒计时</span>
+            <strong id="timerValue">200</strong>
+          </div>
+        </header>
+
+        <section class="play-view" aria-labelledby="playTitle">
+          <div class="play-top">
+            <div>
+              <p class="eyebrow">随机题目已隐藏</p>
+              <h2 id="playTitle">用“是否”问题猜出答案</h2>
+            </div>
+            <div class="status-pill" id="statusPill">准备中</div>
+          </div>
+
+          <div class="hint-card" id="hintCard">
+            <div class="hint-icon" aria-hidden="true">?</div>
+            <div>
+              <span>线索</span>
+              <strong id="hintText">倒计时到50s出线索</strong>
+            </div>
+          </div>
+
+          <form class="ask-form" id="askForm">
+            <label for="questionInput">提问</label>
+            <div class="input-row">
+              <input id="questionInput" autocomplete="off" placeholder="例如：是真实存在的吗？和中国有关吗？是现代的吗？" type="text" />
+              <button class="primary-button" type="submit">提问</button>
+            </div>
+          </form>
+
+          <div class="result-box" id="resultBox" aria-live="polite">正在随机生成题目。</div>
+
+          <form class="guess-form" id="guessForm">
+            <label for="guessInput">猜答案</label>
+            <div class="input-row">
+              <input id="guessInput" autocomplete="off" placeholder="想好了就输入答案" type="text" />
+              <button class="accent-button" type="submit">提交答案</button>
+            </div>
+          </form>
+
+          <div class="play-actions">
+            <button class="ghost-button" type="button" id="newGameButton">换一题</button>
+            <button class="ghost-button" type="button" id="revealButton">揭晓答案</button>
+          </div>
+        </section>
+      </section>
+
+      <aside class="side-panel">
+        <div class="stats">
+          <div class="stat-item">
+            <span>已问</span>
+            <strong id="askedCount">0</strong>
+          </div>
+          <div class="stat-item">
+            <span>是</span>
+            <strong id="yesCount">0</strong>
+          </div>
+          <div class="stat-item">
+            <span>否</span>
+            <strong id="noCount">0</strong>
+          </div>
+        </div>
+
+        <div class="rule-card">
+          <p class="eyebrow">规则</p>
+          <p>系统会自动随机抽取一个隐藏答案。你有 200 秒提问，AI 只会回答“是”或“否”。50 秒时会出现一条隐晦线索。</p>
+        </div>
+
+        <div class="history-list" id="historyList" aria-label="问答记录"></div>
+      </aside>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

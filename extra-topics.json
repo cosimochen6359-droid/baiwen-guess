@@ -1,0 +1,889 @@
+[
+  {
+    "name": "李白",
+    "aliases": [
+      "诗仙",
+      "李太白"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "唐代著名浪漫主义诗人，作品包括《将进酒》《静夜思》等。",
+    "hint": "月色、酒意和飘逸文字，会把你带到它身边。"
+  },
+  {
+    "name": "杜甫",
+    "aliases": [
+      "诗圣",
+      "杜工部"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "唐代现实主义诗人，后世称诗圣，作品反映社会苦难。",
+    "hint": "如果线索里有时代的沉重感，可以往诗里找。"
+  },
+  {
+    "name": "苏轼",
+    "aliases": [
+      "苏东坡",
+      "东坡居士"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "北宋文学家、书画家、美食文化代表人物之一。",
+    "hint": "它身上有文学、仕途起伏，也有一点烟火气。"
+  },
+  {
+    "name": "王安石",
+    "aliases": [
+      "王荆公"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "北宋政治家、文学家，主持过熙宁变法。",
+    "hint": "一次争议很大的改变，常把它推到台前。"
+  },
+  {
+    "name": "司马迁",
+    "aliases": [
+      "太史公"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "西汉史学家，《史记》作者。",
+    "hint": "它把许多人的命运写进一种新的叙事方式里。"
+  },
+  {
+    "name": "成吉思汗",
+    "aliases": [
+      "铁木真"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "蒙古帝国建立者，对欧亚历史影响深远。",
+    "hint": "草原上的名字，后来被写进很辽阔的版图。"
+  },
+  {
+    "name": "忽必烈",
+    "aliases": [
+      "元世祖"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "元朝建立者，蒙古帝国重要统治者。",
+    "hint": "它和一个从草原走向中原的王朝有关。"
+  },
+  {
+    "name": "朱元璋",
+    "aliases": [
+      "明太祖",
+      "洪武帝"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "明朝开国皇帝，出身贫寒。",
+    "hint": "线索可以从很低的起点，走到很高的位置。"
+  },
+  {
+    "name": "康熙帝",
+    "aliases": [
+      "玄烨",
+      "清圣祖"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "清朝皇帝，在位时间很长，开创康乾盛世基础。",
+    "hint": "一个很长的统治周期，是接近答案的方向。"
+  },
+  {
+    "name": "乾隆帝",
+    "aliases": [
+      "弘历",
+      "清高宗"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "清朝皇帝，康乾盛世后期代表人物。",
+    "hint": "繁华、巡游和盛世余晖，都能靠近它。"
+  },
+  {
+    "name": "林则徐",
+    "aliases": [
+      "林文忠公"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "清代官员，主持虎门销烟。",
+    "hint": "一场烟雾散去前后的近代转折，藏着它。"
+  },
+  {
+    "name": "孙中山",
+    "aliases": [
+      "孙文",
+      "国父"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "近代民主革命先行者，中华民国临时大总统。",
+    "hint": "如果问题走向近代共和与理想，离它就近了。"
+  },
+  {
+    "name": "鲁迅",
+    "aliases": [
+      "周树人"
+    ],
+    "type": "person",
+    "topicLabel": "现代人物",
+    "regionLabel": "中国",
+    "summary": "现代文学家、思想家，作品包括《呐喊》《狂人日记》。",
+    "hint": "文字像刀，也像一面照人的镜子。"
+  },
+  {
+    "name": "袁隆平",
+    "aliases": [
+      "杂交水稻之父"
+    ],
+    "type": "person",
+    "topicLabel": "现代人物",
+    "regionLabel": "中国",
+    "summary": "农业科学家，被称为杂交水稻之父。",
+    "hint": "田野里的答案，和许多人的饭碗有关。"
+  },
+  {
+    "name": "邓小平",
+    "aliases": [
+      "邓公"
+    ],
+    "type": "person",
+    "topicLabel": "现代人物",
+    "regionLabel": "中国",
+    "summary": "中国改革开放和现代化建设重要领导人。",
+    "hint": "一个关键词是“打开”，另一个关键词是“变化”。"
+  },
+  {
+    "name": "抗日战争",
+    "aliases": [
+      "中国抗日战争",
+      "全面抗战"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "20世纪中国反抗日本侵略的战争。",
+    "hint": "它不是一天的事，而是一段漫长的抵抗。"
+  },
+  {
+    "name": "五四运动",
+    "aliases": [
+      "五四"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "1919年爆发的爱国运动，对中国新文化和现代历史影响很大。",
+    "hint": "年轻人的声音，在一个春天后变得很响。"
+  },
+  {
+    "name": "改革开放",
+    "aliases": [
+      "中国改革开放"
+    ],
+    "type": "event",
+    "topicLabel": "现代事件",
+    "regionLabel": "中国",
+    "summary": "1978年后中国社会经济发展的重大转折。",
+    "hint": "很多城市的速度，都能成为它的影子。"
+  },
+  {
+    "name": "开元盛世",
+    "aliases": [
+      "开元之治"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "唐玄宗前期的繁荣时期。",
+    "hint": "如果你想到一个王朝的高光时段，方向对了。"
+  },
+  {
+    "name": "贞观之治",
+    "aliases": [
+      "贞观盛世"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "唐太宗李世民统治时期的治世。",
+    "hint": "它更像一种被后人反复称赞的治理样本。"
+  },
+  {
+    "name": "焚书坑儒",
+    "aliases": [
+      "焚书坑术士"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "秦朝加强思想控制的著名事件。",
+    "hint": "线索里有火，也有对思想的紧张。"
+  },
+  {
+    "name": "赤壁之战",
+    "aliases": [
+      "赤壁大战"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "东汉末年曹操与孙刘联军之间的著名战役。",
+    "hint": "江面、火光和三方局势，是它的气味。"
+  },
+  {
+    "name": "淝水之战",
+    "aliases": [
+      "肥水之战"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "东晋与前秦之间的著名战役，以少胜多。",
+    "hint": "一个成语里的慌乱，可以把你带近答案。"
+  },
+  {
+    "name": "澶渊之盟",
+    "aliases": [
+      "澶渊盟约"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "北宋与辽之间的重要盟约。",
+    "hint": "它不是胜利的欢呼，更像边境上的长期妥协。"
+  },
+  {
+    "name": "靖康之变",
+    "aliases": [
+      "靖康之耻"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "北宋灭亡的重要事件，徽钦二帝被俘。",
+    "hint": "一座都城的陷落，留下很深的屈辱感。"
+  },
+  {
+    "name": "土木堡之变",
+    "aliases": [
+      "土木之变"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "明英宗时期的重大军事失败。",
+    "hint": "如果皇帝也成了俘虏，方向已经很近。"
+  },
+  {
+    "name": "郑和下西洋",
+    "aliases": [
+      "下西洋"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "明代大规模远洋航行活动。",
+    "hint": "比起陆路，它更接近海风和远航。"
+  },
+  {
+    "name": "虎门销烟",
+    "aliases": [
+      "销烟运动"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "中国",
+    "summary": "林则徐在广东虎门销毁鸦片的事件。",
+    "hint": "一场公开销毁，后来牵出更大的风暴。"
+  },
+  {
+    "name": "北京奥运会",
+    "aliases": [
+      "2008年北京奥运会"
+    ],
+    "type": "event",
+    "topicLabel": "现代事件",
+    "regionLabel": "中国",
+    "summary": "2008年在北京举办的夏季奥林匹克运动会。",
+    "hint": "一个夏天，很多目光聚到同一座城市。"
+  },
+  {
+    "name": "秦始皇陵",
+    "aliases": [
+      "始皇陵"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "秦始皇的陵墓，兵马俑是其重要组成部分。",
+    "hint": "它在地下，和一个开端式的人物相连。"
+  },
+  {
+    "name": "莫高窟",
+    "aliases": [
+      "敦煌莫高窟",
+      "千佛洞"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "位于敦煌的佛教石窟艺术宝库。",
+    "hint": "颜色、洞窟和西行路上的风沙，是线索。"
+  },
+  {
+    "name": "都江堰",
+    "aliases": [
+      "都江堰水利工程"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "战国时期修建并沿用至今的水利工程。",
+    "hint": "它不像宫殿那么显眼，却一直在让水听话。"
+  },
+  {
+    "name": "颐和园",
+    "aliases": [
+      "清漪园"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "北京著名皇家园林。",
+    "hint": "湖面、长廊和皇家闲居气息都在附近。"
+  },
+  {
+    "name": "天坛",
+    "aliases": [
+      "北京天坛"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "明清皇帝祭天建筑群。",
+    "hint": "它的空间感，和人与天之间的仪式有关。"
+  },
+  {
+    "name": "圆明园",
+    "aliases": [
+      "万园之园"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "清代大型皇家园林，后遭劫掠焚毁。",
+    "hint": "辉煌和残缺，在这个答案里同时存在。"
+  },
+  {
+    "name": "东方明珠",
+    "aliases": [
+      "东方明珠广播电视塔"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "上海陆家嘴著名地标。",
+    "hint": "一座城市的天际线里，有它很醒目的轮廓。"
+  },
+  {
+    "name": "港珠澳大桥",
+    "aliases": [
+      "港珠澳跨海大桥"
+    ],
+    "type": "place",
+    "topicLabel": "现代建筑",
+    "regionLabel": "中国",
+    "summary": "连接香港、珠海和澳门的大型跨海通道。",
+    "hint": "它把几处海边城市连接成一条路。"
+  },
+  {
+    "name": "杭州西湖",
+    "aliases": [
+      "西湖"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "杭州著名湖泊景区，与许多诗文传说有关。",
+    "hint": "如果线索里有湖、桥和诗意，别走太远。"
+  },
+  {
+    "name": "黄鹤楼",
+    "aliases": [
+      "武汉黄鹤楼"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "位于武汉的著名楼阁，与唐诗名篇相关。",
+    "hint": "一座楼，被离别的诗句反复照亮。"
+  },
+  {
+    "name": "大雁塔",
+    "aliases": [
+      "西安大雁塔"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "西安著名佛塔，与玄奘译经相关。",
+    "hint": "它站在古都里，和取经之后的文字有关。"
+  },
+  {
+    "name": "赵州桥",
+    "aliases": [
+      "安济桥"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "中国",
+    "summary": "隋代石拱桥，是中国古代桥梁代表。",
+    "hint": "答案很早，却仍能让人想到工程巧思。"
+  },
+  {
+    "name": "李时珍",
+    "aliases": [
+      "濒湖山人"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "明代医药学家，《本草纲目》作者。",
+    "hint": "草木虫石被仔细整理进它的世界。"
+  },
+  {
+    "name": "张骞",
+    "aliases": [
+      "博望侯"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "西汉使者，出使西域，推动丝绸之路交流。",
+    "hint": "向西的路打开后，很多交流跟着来了。"
+  },
+  {
+    "name": "玄奘",
+    "aliases": [
+      "唐僧",
+      "三藏法师"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "唐代高僧，西行取经并翻译佛经。",
+    "hint": "它的方向是西行，带回来的不只是故事。"
+  },
+  {
+    "name": "鉴真",
+    "aliases": [
+      "鉴真和尚"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "唐代高僧，东渡日本传播文化。",
+    "hint": "一次次渡海，是靠近它的路。"
+  },
+  {
+    "name": "蔡伦",
+    "aliases": [
+      "蔡侯"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "东汉宦官，改进造纸术。",
+    "hint": "如果你想到书写材料的改变，方向不错。"
+  },
+  {
+    "name": "毕昇",
+    "aliases": [
+      "毕升"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "北宋发明家，发明活字印刷术。",
+    "hint": "一个个字可以拆开再组合，是关键线索。"
+  },
+  {
+    "name": "张衡",
+    "aliases": [
+      "张平子"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "东汉科学家、文学家，发明候风地动仪。",
+    "hint": "它的名字常和观测天地、感知震动放在一起。"
+  },
+  {
+    "name": "关羽",
+    "aliases": [
+      "关云长",
+      "关公"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "三国时期蜀汉名将，后世被神化。",
+    "hint": "忠义二字，常常会把人带到它身边。"
+  },
+  {
+    "name": "项羽",
+    "aliases": [
+      "西楚霸王"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "秦末起义领袖，楚汉之争重要人物。",
+    "hint": "英雄气很重，但结局有乌江的寒意。"
+  },
+  {
+    "name": "刘邦",
+    "aliases": [
+      "汉高祖"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "西汉开国皇帝，楚汉之争胜利者。",
+    "hint": "它不像贵族开局，却赢到最后。"
+  },
+  {
+    "name": "汉武帝",
+    "aliases": [
+      "刘彻"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "西汉皇帝，开拓疆域并强化中央集权。",
+    "hint": "开疆、制度和一个强盛王朝的气魄有关。"
+  },
+  {
+    "name": "唐太宗",
+    "aliases": [
+      "李世民"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "唐朝皇帝，贞观之治代表人物。",
+    "hint": "一个被反复称道的治世，围着它展开。"
+  },
+  {
+    "name": "宋太祖",
+    "aliases": [
+      "赵匡胤"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "中国",
+    "summary": "北宋开国皇帝，陈桥兵变后建立宋朝。",
+    "hint": "一件衣服和一次兵变，是很近的暗号。"
+  },
+  {
+    "name": "马可·波罗",
+    "aliases": [
+      "马可波罗"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "威尼斯旅行家，其游记影响欧洲对东方的认识。",
+    "hint": "东方见闻被带回西方，变成想象的入口。"
+  },
+  {
+    "name": "达·芬奇",
+    "aliases": [
+      "达芬奇",
+      "列奥纳多"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "文艺复兴时期艺术家、科学探索者，创作《蒙娜丽莎》。",
+    "hint": "微笑、手稿和跨界天才，会把你引过去。"
+  },
+  {
+    "name": "牛顿",
+    "aliases": [
+      "艾萨克牛顿"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "英国科学家，提出经典力学和万有引力理论。",
+    "hint": "看不见的力，让一个故事变得很有名。"
+  },
+  {
+    "name": "爱因斯坦",
+    "aliases": [
+      "阿尔伯特爱因斯坦"
+    ],
+    "type": "person",
+    "topicLabel": "现代人物",
+    "regionLabel": "世界",
+    "summary": "物理学家，相对论提出者。",
+    "hint": "当时间和空间不再那么朴素时，答案靠近了。"
+  },
+  {
+    "name": "哥伦布",
+    "aliases": [
+      "克里斯托弗哥伦布"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "欧洲航海家，1492年航行到达美洲。",
+    "hint": "一场航行改变了地图上的想象。"
+  },
+  {
+    "name": "亚历山大大帝",
+    "aliases": [
+      "亚历山大"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "马其顿国王，建立横跨欧亚非的帝国。",
+    "hint": "年轻、远征和巨大的版图，是它的影子。"
+  },
+  {
+    "name": "凯撒",
+    "aliases": [
+      "尤利乌斯凯撒",
+      "恺撒"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "古罗马政治家、军事家。",
+    "hint": "罗马、权力和一次刺杀，三者都很近。"
+  },
+  {
+    "name": "林肯",
+    "aliases": [
+      "亚伯拉罕林肯"
+    ],
+    "type": "person",
+    "topicLabel": "历史人物",
+    "regionLabel": "世界",
+    "summary": "美国总统，领导美国内战并推动废奴。",
+    "hint": "它和分裂中的国家、自由的承诺有关。"
+  },
+  {
+    "name": "丘吉尔",
+    "aliases": [
+      "温斯顿丘吉尔"
+    ],
+    "type": "person",
+    "topicLabel": "现代人物",
+    "regionLabel": "世界",
+    "summary": "英国政治家，二战时期英国首相。",
+    "hint": "危急年代里的演说，会把你带向它。"
+  },
+  {
+    "name": "二战",
+    "aliases": [
+      "第二次世界大战",
+      "世界反法西斯战争"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "世界",
+    "summary": "20世纪全球性战争，对世界格局影响巨大。",
+    "hint": "范围很大，几乎整个世界都被卷进去。"
+  },
+  {
+    "name": "一战",
+    "aliases": [
+      "第一次世界大战"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "世界",
+    "summary": "1914年至1918年的全球性战争。",
+    "hint": "旧世界的裂缝，在这场冲突里扩大。"
+  },
+  {
+    "name": "美国独立战争",
+    "aliases": [
+      "美国革命战争"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "世界",
+    "summary": "北美殖民地反抗英国统治并建立美国的战争。",
+    "hint": "一份宣言背后，有这场冲突的影子。"
+  },
+  {
+    "name": "十月革命",
+    "aliases": [
+      "俄国十月革命"
+    ],
+    "type": "event",
+    "topicLabel": "历史事件",
+    "regionLabel": "世界",
+    "summary": "1917年俄国发生的重大革命事件。",
+    "hint": "日历、俄国和一场制度巨变是线索。"
+  },
+  {
+    "name": "冷战",
+    "aliases": [
+      "美苏冷战"
+    ],
+    "type": "event",
+    "topicLabel": "现代事件",
+    "regionLabel": "世界",
+    "summary": "二战后以美国和苏联为代表的长期对峙。",
+    "hint": "它很冷，却让世界紧张了很多年。"
+  },
+  {
+    "name": "登月计划",
+    "aliases": [
+      "阿波罗登月",
+      "阿波罗计划"
+    ],
+    "type": "event",
+    "topicLabel": "现代事件",
+    "regionLabel": "世界",
+    "summary": "美国阿波罗计划实现人类登月。",
+    "hint": "脚印不在地球上，是最明显的暗号。"
+  },
+  {
+    "name": "柏林墙倒塌",
+    "aliases": [
+      "柏林墙倒下"
+    ],
+    "type": "event",
+    "topicLabel": "现代事件",
+    "regionLabel": "世界",
+    "summary": "1989年柏林墙开放和拆除，象征冷战格局变化。",
+    "hint": "当一堵墙不再挡住人群，答案就近了。"
+  },
+  {
+    "name": "罗马斗兽场",
+    "aliases": [
+      "古罗马斗兽场",
+      "圆形竞技场"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "古罗马大型圆形竞技场。",
+    "hint": "欢呼声、圆形空间和古老竞技在附近。"
+  },
+  {
+    "name": "自由女神像",
+    "aliases": [
+      "自由女神"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "位于纽约的著名雕像，美国象征之一。",
+    "hint": "火炬和海港，会指向它。"
+  },
+  {
+    "name": "白宫",
+    "aliases": [
+      "美国白宫"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "美国总统官邸和办公地点。",
+    "hint": "权力的办公桌，藏在一个颜色很明确的名字里。"
+  },
+  {
+    "name": "大本钟",
+    "aliases": [
+      "伊丽莎白塔"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "伦敦著名钟楼地标。",
+    "hint": "时间的声音，在一座城市里很出名。"
+  },
+  {
+    "name": "卢浮宫",
+    "aliases": [
+      "卢浮宫博物馆"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "巴黎著名博物馆，收藏《蒙娜丽莎》等作品。",
+    "hint": "艺术品很多，其中一个微笑尤其有名。"
+  },
+  {
+    "name": "泰姬陵",
+    "aliases": [
+      "印度泰姬陵"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "印度著名陵墓建筑，被视为爱情象征。",
+    "hint": "白色石头里，藏着一段被纪念的情感。"
+  },
+  {
+    "name": "悉尼歌剧院",
+    "aliases": [
+      "雪梨歌剧院"
+    ],
+    "type": "place",
+    "topicLabel": "建筑/景点",
+    "regionLabel": "世界",
+    "summary": "澳大利亚悉尼著名现代建筑。",
+    "hint": "海边的白色轮廓，像帆也像壳。"
+  },
+  {
+    "name": "互联网",
+    "aliases": [
+      "因特网",
+      "Internet"
+    ],
+    "type": "modern",
+    "topicLabel": "现代公共知识",
+    "regionLabel": "世界",
+    "summary": "全球互联的信息网络，深刻改变现代生活。",
+    "hint": "看不见的连接，把很多屏幕连成一张网。"
+  },
+  {
+    "name": "人工智能",
+    "aliases": [
+      "AI",
+      "人工智慧"
+    ],
+    "type": "modern",
+    "topicLabel": "现代公共知识",
+    "regionLabel": "世界",
+    "summary": "让机器模拟、辅助或扩展人类智能的技术领域。",
+    "hint": "它不是人，却正在学习人的判断方式。"
+  }
+]
