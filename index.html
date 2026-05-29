@@ -13,6 +13,7 @@
           <div>
             <p class="eyebrow">AI Yes or No Quiz</p>
             <h1>百问猜猜看</h1>
+            <p class="intro-copy">随机隐藏一个答案。你可以不断提“是否”问题，AI 只回答“是”或“否”；50s 时会出现一条线索。</p>
           </div>
           <div class="timer-card" aria-live="polite">
             <span>倒计时</span>
@@ -59,32 +60,13 @@
             <button class="ghost-button" type="button" id="newGameButton">换一题</button>
             <button class="ghost-button" type="button" id="revealButton">揭晓答案</button>
           </div>
+
+          <section class="history-section" aria-labelledby="historyTitle">
+            <h2 id="historyTitle">问题记录</h2>
+            <div class="history-list" id="historyList" aria-label="问答记录"></div>
+          </section>
         </section>
       </section>
-
-      <aside class="side-panel">
-        <div class="stats">
-          <div class="stat-item">
-            <span>已问</span>
-            <strong id="askedCount">0</strong>
-          </div>
-          <div class="stat-item">
-            <span>是</span>
-            <strong id="yesCount">0</strong>
-          </div>
-          <div class="stat-item">
-            <span>否</span>
-            <strong id="noCount">0</strong>
-          </div>
-        </div>
-
-        <div class="rule-card">
-          <p class="eyebrow">规则</p>
-          <p>系统会自动随机抽取一个隐藏答案。你有 200 秒提问，AI 只会回答“是”或“否”。50 秒时会出现一条隐晦线索。</p>
-        </div>
-
-        <div class="history-list" id="historyList" aria-label="问答记录"></div>
-      </aside>
     </main>
 
     <script src="./script.js"></script>

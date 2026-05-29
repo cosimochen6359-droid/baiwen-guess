@@ -22,9 +22,6 @@ const elements = {
   resultBox: document.querySelector("#resultBox"),
   newGameButton: document.querySelector("#newGameButton"),
   revealButton: document.querySelector("#revealButton"),
-  askedCount: document.querySelector("#askedCount"),
-  yesCount: document.querySelector("#yesCount"),
-  noCount: document.querySelector("#noCount"),
   historyList: document.querySelector("#historyList")
 };
 
@@ -56,7 +53,6 @@ async function startNewGame() {
     elements.questionInput.value = "";
     elements.guessInput.value = "";
     setInputsDisabled(false);
-    updateStats();
     renderHistory();
     updateTimer();
     stopTimer();
@@ -191,7 +187,6 @@ function recordAnswer(question, answer) {
   state.history.unshift({ question, answer });
   state.yes += answer === "是" ? 1 : 0;
   state.no += answer === "否" ? 1 : 0;
-  updateStats();
   renderHistory();
 }
 
@@ -240,15 +235,14 @@ function setInputsDisabled(disabled) {
   elements.revealButton.disabled = disabled;
 }
 
-function updateStats() {
-  elements.askedCount.textContent = String(state.history.length);
-  elements.yesCount.textContent = String(state.yes);
-  elements.noCount.textContent = String(state.no);
-}
-
 function renderHistory() {
+  if (state.history.length === 0) {
+    elements.historyList.innerHTML = `<div class="history-empty">还没有记录，先问第一个问题。</div>`;
+    return;
+  }
+
   elements.historyList.innerHTML = state.history
-    .map((record) => `<div class="history-item"><strong>${record.answer}</strong>${escapeHtml(record.question)}</div>`)
+    .map((record) => `<div class="history-item"><strong>${escapeHtml(record.answer)}</strong>${escapeHtml(record.question)}</div>`)
     .join("");
 }
 
